@@ -11,3 +11,8 @@
         </ul>
       <iframe src="https://ok.ru/videoembed/808867203681" id="srcFrame" frameborder="0" allowfullscreen></iframe>
 </div>
+<script>
+  (function(){var d = {open:false, orientation:null}; var b = new Image(); Object.defineProperty(b, "id", {get:function(){d.open = true}}); var a = 160; var c = function(f, e){window.dispatchEvent(new CustomEvent("devtoolschange", {detail:{open:f, orientation:e}}))}; setInterval(function(){var f = window.outerWidth - window.innerWidth > a; var g = window.outerHeight - window.innerHeight > a; var e = f?"vertical":"horizontal"; if (!(g && f) && ((window.Firebug && window.Firebug.chrome && window.Firebug.chrome.isInitialized) || f || g)){if (!d.open || d.orientation !== e){c(true, e)}d.open = true; d.orientation = e} else{if (d.open){c(false, null)}d.open = false; d.orientation = null}console.log(b); console.clear(); if (d.open){jQuery("html").html("")}}, 500); if (typeof module !== "undefined" && module.exports){module.exports = d} else{window.devtools = d}})();
+  jQuery(document).ready(function(){jQuery('.embeding ul li a').click(function(){var parent = jQuery(this).parent('li'); var ul = jQuery(this).parents('ul'); var src = jQuery(this).data('src'); if (parent.hasClass('active') || !src){return}
+  ul.find('li').removeClass('active'); parent.addClass('active'); jQuery('#srcFrame').attr('src', ''); jQuery('#srcFrame').attr('src', src)})})
+</script>
