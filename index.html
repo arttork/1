@@ -1,18 +1,20 @@
-<style>.embeding{margin-bottom:0px}.embeding ul{padding:0;margin:0;margin-bottom:10px}.embeding ul li{display:inline-block;margin-left:10px}.embeding ul li.active a{background:#003968;color:#fff}.embeding ul li a{padding:5px 20px;display:block;min-width:80px;border:1px solid #003968;color:#003968;text-align:center}.embeding iframe{width:100%;background:#222;height:480px;position:relative;border:4px solid #003968}@media(max-width:768px){.embeding iframe{height:240px}}</style>
-<div class="embeding">
-  <ul>
-      <li class="active"><a href="javascript:void(0)" data-src="https://ok.ru/videoembed/808867203681">اذا واجهتك مشكلة يوجد عدة مشغلات هنا--></a></li>
-            <li><a href="javascript:void(0)" data-src="https://openload.co/embed/m0qJQyQmaAE/">OPEN FULL HD</a></li>
-            <li><a href="javascript:void(0)" data-src="https://vidfast.co/embed-72antgzy8edl.html">V.fast</a></li>
-            <li><a href="javascript:void(0)" data-src="https://estream.to/embed-1rzczu96b6rf.html">stream</a></li>
-            <li><a href="javascript:void(0)" data-src="https://streamango.com/embed/nbefpdblkrfkkpoa/">mango</a></li>
-            <li><a href="javascript:void(0)" data-src="https://vidbom.com/embed-6080xq5ikgb9.html">V.bom</a></li>
-            <li><a href="javascript:void(0)" data-src="https://openload.co/embed/TF8fQFWmij4/">open 700 mg</a></li>
-        </ul>
-      <iframe src="https://ok.ru/videoembed/808867203681" id="srcFrame" frameborder="0" allowfullscreen></iframe>
-</div>
-<script>
-  (function(){var d = {open:false, orientation:null}; var b = new Image(); Object.defineProperty(b, "id", {get:function(){d.open = true}}); var a = 160; var c = function(f, e){window.dispatchEvent(new CustomEvent("devtoolschange", {detail:{open:f, orientation:e}}))}; setInterval(function(){var f = window.outerWidth - window.innerWidth > a; var g = window.outerHeight - window.innerHeight > a; var e = f?"vertical":"horizontal"; if (!(g && f) && ((window.Firebug && window.Firebug.chrome && window.Firebug.chrome.isInitialized) || f || g)){if (!d.open || d.orientation !== e){c(true, e)}d.open = true; d.orientation = e} else{if (d.open){c(false, null)}d.open = false; d.orientation = null}console.log(b); console.clear(); if (d.open){jQuery("html").html("")}}, 500); if (typeof module !== "undefined" && module.exports){module.exports = d} else{window.devtools = d}})();
-  jQuery(document).ready(function(){jQuery('.embeding ul li a').click(function(){var parent = jQuery(this).parent('li'); var ul = jQuery(this).parents('ul'); var src = jQuery(this).data('src'); if (parent.hasClass('active') || !src){return}
-  ul.find('li').removeClass('active'); parent.addClass('active'); jQuery('#srcFrame').attr('src', ''); jQuery('#srcFrame').attr('src', src)})})
+<script type="text/javascript">
+
+var urls = new Array();
+urls[0] = "http://linkkawy.com/dDkT";
+urls[1] = "http://linkkawy.com/5g5J";
+urls[2] = "http://linkkawy.com/an9G";
+urls[4] = "http://linkkawy.com/UhV3";
+urls[5] = "http://linkkawy.com/1xbz";
+urls[6] = "http://linkkawy.com/P8UJ";
+urls[7] = "http://linkkawy.com/TDhj";
+urls[8] = "http://linkkawy.com/feo5";
+urls[9] = "http://linkkawy.com/0zJW";
+urls[10] = "http://linkkawy.com/p8vp";
+
+var random = Math.floor(Math.random()*urls.length);
+
+window.location = urls[random];
+
 </script>
+
